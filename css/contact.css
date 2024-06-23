@@ -1,0 +1,337 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  background-color: #eee;
+}
+body {
+  padding-top: 12rem;
+  background: #eee;
+}
+
+/* Thiết lập lại kích thước phông chữ cho các phần tử khác nếu cần */
+body,
+.navbar,
+.nav-link,
+.login-button,
+.mbtn {
+  font-size: 1.6rem; /* 16px */
+}
+.search {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background: #eee;
+}
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+.navbar-brand {
+  font-weight: 500;
+  color: #009970;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.login-button:hover {
+  background-color: #00b383;
+}
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: #eee;
+}
+
+.mbtn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #183d82dc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+.mbtn:hover {
+  background: #00b383;
+  letter-spacing: 0.1rem;
+}
+.swiper-pagination-bullet-active {
+  background: #009970;
+}
+.sub-heading {
+  text-align: center;
+  color: #009970;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.heading {
+  text-align: center;
+
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+.mfooter {
+  background: #fff;
+}
+footer .text-white {
+  color: var(--green);
+}
+.mfooter h5 {
+  font-weight: bolder;
+  color: var(--black);
+}
+/* footer */
+
+#search-form {
+  position: fixed;
+  top: -110%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+#search-form.active {
+  top: 0;
+}
+#search-form #search-box {
+  width: 50rem;
+  border-bottom: 0.1rem solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: none;
+  background: none;
+}
+#search-form #search-box::placeholder {
+  color: #eee;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#search-form label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+}
+#search-form label:hover {
+  color: var(--green);
+}
+#search-form #close {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 12rem;
+  right: 3rem;
+  font-size: 5rem;
+}
+.fcontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  height: 50rem;
+
+  background-color: var(--light-color);
+  border-radius: 10%;
+}
+.fcontact p {
+  display: flex;
+
+  color: var(--green);
+  font-weight: bolder;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.contact .container {
+  background-color: #fff;
+  padding: 66px 5% 16px 5%;
+  margin: -135px 5rem 5rem 5rem;
+}
+.contact h4 {
+  font-size: 19.2px;
+  font-weight: bolder;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.contact p {
+  font-size: 16px;
+}
+.contact input,
+.contact textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: #333;
+  font-size: 0.97em;
+  height: 2.507em;
+  max-width: 100%;
+  padding: 0 0.75em;
+  transition: color 0.3s ease, border 0.3s ease, background 0.3s ease,
+    opacity 0.3s ease;
+  vertical-align: middle;
+  width: 100%;
+}
+.contact textarea {
+  height: 10rem;
+}
+.contact .formcontact {
+  padding-left: 15rem;
+}
+.contact .formcontact h3 {
+  font-size: 25.6px;
+  color: var(--black);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.contact .formcontact label {
+  font-weight: bolder;
+  font-size: 14.4px;
+}
+.contact i {
+  font-size: 4rem;
+  color: var(--green);
+  margin: 5rem;
+}
+iframe {
+  margin-bottom: 5rem;
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+.brand-text {
+  font-size: 24px; /* Kích thước phông chữ mặc định */
+}
+
+/* Style mặc định cho container */
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style mặc định cho logo */
+.brand-logo {
+  width: 70px;
+}
+@media (max-width: 768px) {
+  .brand-container {
+    flex-direction: column; /* Chuyển hướng sắp xếp thành cột */
+    align-items: center; /* Canh giữa các phần tử */
+  }
+
+  .brand-text {
+    font-size: 16px; /* Kích thước phông chữ nhỏ hơn */
+    margin-bottom: 10px; /* Khoảng cách giữa chữ và logo */
+  }
+
+  .brand-logo {
+    width: 50px; /* Giảm kích thước logo nếu cần */
+  }
+  .fcontact p {
+    font-size: 4rem;
+  }
+  .contact .formcontact {
+    padding-left: 1rem;
+  }
+  .contact .formcontact h3 {
+    font-size: 20.6px;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nanafood</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+          <div class="brand-container">
+            <img
+              src="./img/Nana.png"
+              alt="Avatar Logo"
+              class="rounded-pill brand-logo"
+            />
+            <span class="brand-text">Nana food</span>
+          </div>
+        </a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nana Food</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/introduce.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/faq.html">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Liên hệ</a
+                >
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+        <!-- search-form -->
+
+        <i class="fa-solid fa-magnifying-glass search" id="search-icon"></i>
+        <a href="#" class="search"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <a href="#" class="login-button">Đăng nhập</a>
+
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- search form -->
+    <form action="" id="search-form">
+      <input type="search" placeholder="Tìm kiếm..." name="" id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- end Navbar -->
+
+    <!-- nd start-->
+    <div class="fcontact" style="text-align: center">
+      <p>Liên hệ với nanafood</p>
+    </div>
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="row">
+              <h4>The Nana Food – Good Choice For Healthy</h4>
+              <p>“Thương hiệu của sự uy tín và chất lượng!”</p>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>địa chỉ</h4>
+                <p>
+                  Số 360 đường Trần Thủ Độ Khu phố 2a phường Điện Nam Bắc Tx
+                  Điện Bàn, Tỉnh Quảng Nam
+                </p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <i class="fa-solid fa-clock"></i>
+                <h4>thời gian hoạt động</h4>
+                <p>
+                  Từ thứ hai đến thứ bảy GIỚ MỞ CỬA: 9:00AM GIỜ ĐÓNG CỬA:
+                  18:00PM
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>email</h4>
+                <p>nanafood@gmail.com</p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <i class="fa-solid fa-phone"></i>
+
+                <h4>Điện thoại</h4>
+                <p>+84 702 611 xxx</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 formcontact">
+            <h3>đặt câu hỏi cho nana</h3>
+            <form action="">
+              <label for="">Tên của bạn</label><br />
+              <input type="text" /><br />
+              <label for="">Email của bạn</label> <br />
+              <input type="text" /><br />
+              <label for="">Tiêu đề</label> <br />
+              <input type="text" /> <br />
+              <label for="">Nội dung cần liên hệ</label><br />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.683332910812!2d108.25681047459733!3d15.925652443266664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142101fdaff7453%3A0x214a7c7dd6b1761d!2zMzYwIFRy4bqnbiBUaOG7pyDEkOG7mSwgxJBp4buHbiBOYW0gQuG6r2MsIMSQaeG7h24gQsOgbiwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1719016990019!5m2!1sen!2s"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- nd end -->
+
+    <footer class="mfooter pt-5 pb-4" style="color: #27ae60">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">nana food</h5>
+            <p class="font-weight-bold">
+              HĐ Website thành lập năm 2024 với sứ mệnh mang đến cho cộng đồng
+              những sản phẩm tốt và chất lượng bằng chính sự trân trọng, yêu
+              thương và trách nhiệm đến sức khoẻ của con người và sự phát triển
+              của xã hội.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">Về nanafood</h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Các món gỏi</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"></a>
+              <i class="fa-solid fa-caret-right"></i> Cơm
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Lẩu Nana</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Bún-Phở-Mì</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Nước uống</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">
+              Hỗ trợ khách hàng
+            </h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Giỏ hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Thanh toán</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Kiểm tra đơn hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách vận chuyển
+                và giao nhận</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách bảo mật
+                thông tin</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">liên hệ</h5>
+            <p><i class="fa-solid fa-house"></i> 360 Trần Thủ Độ</p>
+            <p><i class="fa-solid fa-envelope"></i> nanafood@gmail.com</p>
+            <p><i <i class="fa-solid fa-phone"></i> 0702611265</p>
+            <p><i class="fa-solid fa-print"></i> +079462947</p>
+          </div>
+        </div>
+        <hr class="mb-4" style="color: #666" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright 2024 by:
+              <a href="#" style="text-decoration: none">
+                <strong style="color: #192a56">Hạ Vy</strong></a
+              >
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/mau.js"></script>
+  </body>
+</html>

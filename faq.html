@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nanafood</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/faq.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+          <div class="brand-container">
+            <img
+              src="./img/Nana.png"
+              alt="Avatar Logo"
+              class="rounded-pill brand-logo"
+            />
+            <span class="brand-text">Nana food</span>
+          </div>
+        </a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nana Food</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/introduce.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/faq.html"
+                  >Faq</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Liên hệ</a>
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+        <!-- search-form -->
+
+        <i class="fa-solid fa-magnifying-glass search" id="search-icon"></i>
+        <a href="#" class="search"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <a href="#" class="login-button">Đăng nhập</a>
+
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- search form -->
+    <form action="" id="search-form">
+      <input type="search" placeholder="Tìm kiếm..." name="" id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- end Navbar -->
+
+    <!-- nd start-->
+    <div class="content">
+      <div class="title">
+        <h1><strong>faq</strong></h1>
+        <p>Những câu hỏi thường gặp</p>
+      </div>
+      <div class="divider container-fluid"></div>
+      <div class="row container-fluid">
+        <div class="col-12 col-sm-3 menu">
+          <img src="/img/gh1.png" alt="" />
+          <div class="box-text">
+            <strong>giao hàng</strong>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Thời hạn ước tính cho
+                  việc giao hàng là bao lâu?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Thông thường sau khi nhận được thông tin đặt hàng chúng tôi sẽ
+                  xử lý đơn hàng trong vòng 24h và phản hồi lại thông tin cho
+                  khách hàng về việc thanh toán và giao nhận. <br />
+                  Thời gian giao hàng thường trong khoảng từ 3-5 ngày kể từ ngày
+                  chốt đơn hàng hoặc theo thỏa thuận với khách khi đặt hàng.
+                  <br />Tuy nhiên, cũng có trường hợp việc giao hàng kéo dài hơn
+                  nhưng chỉ xảy ra trong những tình huống bất khả kháng như sau:
+                  <br />– Nhân viên chúng tôi liên lạc với khách hàng qua điện
+                  thoại không được nên không thể giao hàng. <br />– Địa chỉ giao
+                  hàng bạn cung cấp không chính xác hoặc khó tìm. <br />– Số
+                  lượng đơn hàng tăng đột biến khiến việc xử lý đơn hàng bị
+                  chậm. <br />– Đối tác cung cấp hàng chậm hơn dự kiến khiến
+                  việc giao hàng bị chậm lại hoặc đối tác vận chuyển giao hàng
+                  bị chậm. <br />
+                  Về phí vận chuyển, chúng tôi sử dụng dịch vụ vận chuyển ngoài
+                  nên cước phí vận chuyển sẽ được tính theo phí của các đơn vị
+                  vận chuyển tùy vào vị trí và khối lượng của đơn hàng, khi liên
+                  hệ lại xác nhận đơn hàng với khách sẽ báo mức phí cụ thể cho
+                  khách hàng.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse8"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse8"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Trách nhiệm về trường
+                  hợp hàng bị hư hỏng do quá trình vận chuyển?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Đối với hàng hóa bị hư hỏng do quá trình vận chuyển dù là đơn
+                  hàng do chính cửa hàng vận chuyển hay do bên thứ 3 vận chuyển
+                  thì chúng tôi sẽ là bên đứng ra chịu trách nhiệm giải quyết
+                  vấn đề cho khách hàng. Khách hàng có quyền từ chối nhận sản
+                  phẩm và yêu cầu đổi trả theo quy định “ đổi trả hoàn phí” còn
+                  mọi vấn đề phát sinh chúng tôi sẽ làm việc lại với đối tác vận
+                  chuyển để giải quyết đền bù cho đơn hàng theo thỏa thuận hợp
+                  tác giữa công ty với đối tác thứ 3 cung cấp dịch vụ vận
+                  chuyển. Lưu ý: Trường hợp phát sinh chậm trễ trong việc giao
+                  hàng chúng tôi sẽ thông tin kịp thời cho khách hàng và khách
+                  hàng có thể lựa chọn giữa việc Hủy hoặc tiếp tục chờ hàng.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Có được quyền kiểm tra
+                  hàng khi nhận không?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Trước khi nhận hàng và thanh toán, Quý Khách được quyền kiểm
+                  tra sản phẩm. Không hỗ trợ thử hàng. Quý Khách vui lòng mở gói
+                  hàng kiểm tra để đảm bảo đơn hàng được giao đúng mẫu mã, số
+                  lượng như đơn hàng đã đặt. Không thử hay dùng thử sản phẩm.
+                  Sau khi đồng ý với món hàng được giao đến, Quý Khách thanh
+                  toán với nhân viên giao hàng (trường hợp đơn hàng được ship
+                  COD) và nhận hàng. Trường hợp Quý Khách không ưng ý với sản
+                  phẩm, Quý Khách có thể từ chối nhận hàng. Tại đây, chúng tôi
+                  sẽ thu thêm chi phí hoàn hàng, tương đương với phí ship của
+                  đơn hàng Quý khách đã đặt. Lưu ý: – Khi Quý Khách kiểm tra đơn
+                  hàng, nhân viên giao nhận buộc phải đợi Quý Khách kiểm tra
+                  hàng hóa bên trong gói hàng. Trường hợp nhân viên từ chối cho
+                  Quý Khách kiểm tra hàng hóa, Quý Khách vui lòng liên hệ với
+                  Thefittuna.com qua hotline: +84 39 5762xxx để được hỗ trợ. –
+                  thefittuna.com sẽ không chịu trách nhiệm về số lượng, mẫu mã
+                  cũng như lỗi của sản phẩm, sau khi đơn hàng đã được giao hàng
+                  thành công. – Quý Khách tránh dùng vật sắc nhọn để mở gói hàng
+                  để tránh gây hư hỏng cho sản phẩm bên trong. Đối với những
+                  trường hợp sản phẩm bị hư hỏng do lỗi từ phía Khách hàng,
+                  thefittuna.com rất tiếc không thể hỗ trợ Quý Khách đổi/trả/bảo
+                  hành sản phẩm.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider container-fluid"></div>
+      <div class="row container-fluid">
+        <div class="col-12 col-sm-3 menu">
+          <img src="/img/gh2.png" alt="" />
+          <div class="box-text">
+            <strong>thanh toán</strong>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Nana nhận thanh toán
+                  qua các hình thức nào?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Có 3 hình thức thanh toán, khách hàng có thể lựa chọn hình
+                  thức thuận tiện và phù hợp với mình nhất: <br />
+                  Cách 1: Thanh toán tiền mặt trực tiếp địa chỉ của chúng tôi
+                  <br />
+                  Cách 2: Thanh toán khi nhận hàng (COD), khách hàng xem hàng
+                  tại nhà, thanh toán tiền mặt cho nhân viên giao nhận hàng.
+                  <br />
+                  Cách 3: Chuyển khoản trước. Quý khách chuyển khoản trước, sau
+                  đó chúng tôi tiến hành giao hàng theo thỏa thuận hoặc hợp đồng
+                  với Quý khách. <br />
+                  Thông tin tài khoản: STK : 5660568371 <br />Chủ tài khoản: LÊ
+                  THỊ HẠ VY <br />
+                  Ngân hàng: BIDV
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Nội dung thanh toán
+                  khi chuyển khoản cho khách lẻ và khách sỉ là gì?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Nội dung chuyển khoản : Ghi rõ Số điện thoại hoặc Số đơn hàng
+                  Sau khi chuyển khoản, chúng tôi sẽ liên hệ xác nhận và tiến
+                  hành giao hàng. <br />
+                  Nếu sau thời gian thỏa thuận mà chúng tôi không giao hàng hoặc
+                  không phản hồi lại, quý khách có thể gửi khiếu nại trực tiếp
+                  về địa chỉ trụ sở <br />
+                  Đối với khách hàng có nhu cầu mua số lượng lớn để kinh doanh
+                  hoặc buôn sỉ vui lòng liên hệ trực tiếp với chúng tôi để có
+                  chính sách giá cả hợp lý. Và việc thanh toán sẽ được thực hiện
+                  theo hợp đồng.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Nana có cam kết gì
+                  trong các giao dịch không?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Chúng tôi cam kết kinh doanh minh bạch, hợp pháp, bán hàng
+                  chất lượng, có nguồn gốc
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider container-fluid"></div>
+      <div class="row container-fluid">
+        <div class="col-12 col-sm-3 menu">
+          <img src="/img/gh3.png" alt="" />
+          <div class="box-text">
+            <strong>Khiếu nại</strong>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeven"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Chính sách xử lý khiếu
+                  nại của Nana thế nào?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  – Tiếp nhận mọi khiếu nại của khách hàng liên quan đến việc sử
+                  dụng dịch vụ của công ty. <br />– Tất cả mọi trường hơp bảo
+                  hành, quý khách có thể liên hệ với chúng tôi để làm thủ tục
+                  bảo hành. <br />– Thời gian giải quyết khiếu nại trong thời
+                  hạn tối đa là 03 (ba) ngày làm việc kể từ khi nhận được khiếu
+                  nại của của khách hàng. Trong trường hợp bất khả kháng 2 bên
+                  sẽ tự thương lượng.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse8"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse8"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Nana có chính sách bảo
+                  hành không?
+                </button>
+              </h2>
+              <div
+                id="flush-collapse8"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-heading8"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Trường hợp được bảo hành:
+                      <ul>
+                        <li>
+                          Sản phẩm vừa được giao không đúng như hình ảnh cung
+                          cấp hoặc trên website
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Trường hợp không được bảo hành:
+                      <ul>
+                        <li>
+                          Sản phẩm bị trầy xước do quá trình sử dụng lâu ngày
+                        </li>
+                        <li>Sản phẩm bị bể móp, biến dạng do bị va đập</li>
+                        <li>Sản phẩm bị bong tem mác của nhà sản suất</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Điều kiện đổi trả hàng hoặc hoàn tiền 100%:
+                      <ul>
+                        <li>
+                          Sản phẩm phát hiện bị lỗi của nhà sản xuất khi nhận
+                          hàng.
+                        </li>
+                        <li>
+                          Sản phẩm không giống với sản phẩm mà Quý khách đã đặt
+                          hàng trên website của chúng tôi.
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                  Lưu ý:
+                  <ul>
+                    <li>
+                      Khách hàng cần đổi trả hàng trong vòng 02 ngày làm việc
+                      tính từ thời điểm quý khách nhận hàng.
+                    </li>
+                    <li>
+                      Sản phẩm đổi trả cần nguyên vẹn nhãn mác, hộp, bao bì gốc
+                      của sản phẩm như khi Quý khách nhận hàng lúc đầu.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse9"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse9"
+                >
+                  <i class="fa-solid fa-arrow-right"></i> Trách nhiệm của Nana
+                  trường hợp khi hàng bị hư hỏng do quá trình vận chuyển?
+                </button>
+              </h2>
+              <div
+                id="flush-collapse9"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-heading9"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Đối với hàng hóa bị hư hỏng do quá trình vận chuyển dù là đơn
+                  hàng do chính cửa hàng vận chuyển hay do bên thứ 3 vận chuyển
+                  thì chúng tôi sẽ là bên đứng ra chịu trách nhiệm giải quyết
+                  vấn đề cho khách hàng. Khách hàng có quyền từ chối nhận sản
+                  phẩm và yêu cầu đổi trả theo quy định “ đổi trả hoàn phí” còn
+                  mọi vấn đề phát sinh chúng tôi sẽ làm việc lại với đối tác vận
+                  chuyển để giải quyết đền bù cho đơn hàng theo thỏa thuận hợp
+                  tác giữa công ty với đối tác thứ 3 cung cấp dịch vụ vận
+                  chuyển. <br />
+                  Lưu ý: Trường hợp phát sinh chậm trễ trong việc giao hàng
+                  chúng tôi sẽ thông tin kịp thời cho khách hàng và khách hàng
+                  có thể lựa chọn giữa việc Hủy hoặc tiếp tục chờ hàng.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mess">
+      <h1><strong>Xin chào, Nana có thể giúp gì cho bạn?</strong></h1>
+      <p>Gửi vấn đề bạn đang gặp phải để được xử lí tốt nhất</p>
+      <a href="#" class="mbtn">gửi tin nhắn ngay</a>
+    </div>
+
+    <!-- nd end -->
+
+    <footer class="mfooter pt-5 pb-4" style="color: #27ae60">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">nana food</h5>
+            <p class="font-weight-bold">
+              HĐ Website thành lập năm 2024 với sứ mệnh mang đến cho cộng đồng
+              những sản phẩm tốt và chất lượng bằng chính sự trân trọng, yêu
+              thương và trách nhiệm đến sức khoẻ của con người và sự phát triển
+              của xã hội.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">Về nanafood</h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Các món gỏi</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"></a>
+              <i class="fa-solid fa-caret-right"></i> Cơm
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Lẩu Nana</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Bún-Phở-Mì</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Nước uống</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">
+              Hỗ trợ khách hàng
+            </h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Giỏ hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Thanh toán</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Kiểm tra đơn hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách vận chuyển
+                và giao nhận</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách bảo mật
+                thông tin</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">liên hệ</h5>
+            <p><i class="fa-solid fa-house"></i> 360 Trần Thủ Độ</p>
+            <p><i class="fa-solid fa-envelope"></i> nanafood@gmail.com</p>
+            <p><i <i class="fa-solid fa-phone"></i> 0702611265</p>
+            <p><i class="fa-solid fa-print"></i> +079462947</p>
+          </div>
+        </div>
+        <hr class="mb-4" style="color: #666" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright 2024 by:
+              <a href="#" style="text-decoration: none">
+                <strong style="color: #192a56">Hạ Vy</strong></a
+              >
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm"
+                    style="font-size: 23px; color: #666"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/faq.js"></script>
+  </body>
+</html>

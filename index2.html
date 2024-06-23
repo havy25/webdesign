@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nanafood</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+          <div class="brand-container">
+            <img
+              src="./img/Nana.png"
+              alt="Avatar Logo"
+              class="rounded-pill brand-logo"
+            />
+            <span class="brand-text">Nana food</span>
+          </div>
+        </a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/introduce.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+        <!-- search-form -->
+
+        <i class="fa-solid fa-magnifying-glass search" id="search-icon"></i>
+        <a href="#" class="search"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <a href="#" class="login-button">Đăng nhập</a>
+
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- end Navbar -->
+    <!-- search start -->
+    <form action="" id="search-form">
+      <input type="search" placeholder="Tìm kiếm..." name="" id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- search end -->
+
+    <!-- home section start -->
+    <section class="home mfooter" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our special dish</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, non!
+              </p>
+              <a href="#" class="mbtn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/chickenBurger.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our special dish</span>
+              <h3>fried chicken</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, non!
+              </p>
+              <a href="#" class="mbtn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/high-angle-delicious-sushi-concept.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our special dish</span>
+              <h3>hot pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, non!
+              </p>
+              <a href="#" class="mbtn">order now</a>
+            </div>
+            <div class="image">
+              <img src="/img/slide1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- home section end -->
+    <!-- dishes section start -->
+    <section class="dishes container-fluid mfooter" id="dishes">
+      <h3 class="sub-heading">our dishes</h3>
+      <h1 class="heading">popular dishes</h1>
+      <div class="box-container container-fluid">
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="/product.html" class="fas fa-eye"></a>
+          <img src="/img/goi1.jpg" alt="" />
+          <h3>gỏi đu đủ thái</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>100,000đ</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/goi2.jpg" alt="" />
+          <h3>gỏi bò tái chanh</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/mon4.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/MON1.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/mon2.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/MON1.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/chickenBurger.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/sandwich.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/mon3.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/mon4.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/MON1.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="/img/mon2.jpg" alt="" />
+          <h3>tasty food</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <span>$15.99</span>
+          <a href="#" class="mbtn">thêm vào giỏ</a>
+        </div>
+      </div>
+    </section>
+    <!-- dishes section end -->
+    <!-- about section start -->
+    <section class="about mfooter" id="about">
+      <h3 class="sub-heading">about us</h3>
+      <h1 class="heading">why choose us ?</h1>
+      <div class="mrow">
+        <div class="image">
+          <img src="/img/about.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h3>best food in the country</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            quisquam, excepturi provident explicabo, vero quidem fugiat nobis
+            numquam hic, nesciunt sit. Eveniet distinctio aliquid architecto nam
+            mollitia voluptatibus debitis sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            repudiandae.
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>free delivery</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>easy payments</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span>24/7 service</span>
+            </div>
+          </div>
+          <a href="#" class="mbtn">learn more</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+    <!-- review section start -->
+    <section class="review mfooter" id="review">
+      <h3 class="sub-heading">Đánh giá của khách hàng</h3>
+      <h1 class="heading">Mọi người đã nói gì</h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="/img/ng1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Ngọc Như</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              doloremque totam excepturi, numquam minima assumenda amet? Placeat
+              mollitia vero deleniti unde, veniam dolorum amet molestiae earum
+              iure, quos, laudantium porro!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="/img/ng2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Nhã Uyên</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              doloremque totam excepturi, numquam minima assumenda amet? Placeat
+              mollitia vero deleniti unde, veniam dolorum amet molestiae earum
+              iure, quos, laudantium porro!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="/img/ng3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Đông Tuấn</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              doloremque totam excepturi, numquam minima assumenda amet? Placeat
+              mollitia vero deleniti unde, veniam dolorum amet molestiae earum
+              iure, quos, laudantium porro!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="/img/ng2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Nhã Uyên</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              doloremque totam excepturi, numquam minima assumenda amet? Placeat
+              mollitia vero deleniti unde, veniam dolorum amet molestiae earum
+              iure, quos, laudantium porro!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+    <!-- order section start -->
+    <section class="order" id="order">
+      <h3 class="sub-heading">Đặt hàng ngay</h3>
+      <h1 class="heading">Miễn phí và nhanh chóng</h1>
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>Tên</span>
+            <input type="text" placeholder="Nhập tên của bạn" />
+          </div>
+          <div class="input">
+            <span>Số điện thoại</span>
+            <input type="text" placeholder="Nhập số điện thoại của bạn" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>Đặt hàng</span>
+            <input type="text" placeholder="Nhập tên món" />
+          </div>
+          <div class="input">
+            <span>Thức ăn thêm</span>
+            <input type="test" placeholder="Ăn thêm " />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>Số lượng</span>
+            <input type="text" placeholder="Bạn muốn gọi bao nhiêu" />
+          </div>
+          <div class="input">
+            <span>Thời gian</span>
+            <input type="datetime-local" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>Địa chỉ</span>
+            <textarea
+              name=""
+              placeholder="Nhập địa chỉ của bạn"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="input">
+            <span>Ghi chú</span>
+            <textarea
+              name=""
+              placeholder="Nhập lời nhắn của bạn"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Đặt ngay" class="mbtn" />
+      </form>
+    </section>
+    <!-- order section end -->
+
+    <footer class="mfooter pt-5 pb-4" style="color: #27ae60">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">nana food</h5>
+            <p class="font-weight-bold">
+              HĐ Website thành lập năm 2024 với sứ mệnh mang đến cho cộng đồng
+              những sản phẩm tốt và chất lượng bằng chính sự trân trọng, yêu
+              thương và trách nhiệm đến sức khoẻ của con người và sự phát triển
+              của xã hội.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">Về nanafood</h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Các món gỏi</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"></a>
+              <i class="fa-solid fa-caret-right"></i> Cơm
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Lẩu Nana</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Bún-Phở-Mì</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Nước uống</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">
+              Hỗ trợ khách hàng
+            </h5>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Giỏ hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Thanh toán</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Kiểm tra đơn hàng</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách vận chuyển
+                và giao nhận</a
+              >
+            </p>
+            <p>
+              <a href="#" style="text-decoration: none; color: #27ae60"
+                ><i class="fa-solid fa-caret-right"></i> Chính sách bảo mật
+                thông tin</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 front-weight-bold">liên hệ</h5>
+            <p><i class="fa-solid fa-house"></i> 360 Trần Thủ Độ</p>
+            <p><i class="fa-solid fa-envelope"></i> nanafood@gmail.com</p>
+            <p><i <i class="fa-solid fa-phone"></i> 0702611265</p>
+            <p><i class="fa-solid fa-print"></i> +079462947</p>
+          </div>
+        </div>
+        <hr class="mb-4" style="color: #666" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright 2024 by:
+              <a href="#" style="text-decoration: none">
+                <strong style="color: #192a56">Hạ Vy</strong></a
+              >
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- loader part -->
+    <div class="loader-container">
+      <img src="/img/load1.gif" alt="" />
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
